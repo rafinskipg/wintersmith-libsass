@@ -1,26 +1,30 @@
 {
-  "name": "wintersmith-plugin",
-  "version": "1.0.0",
-  "description": "A wintersmith plugin.",
-  "author": "Anonymous",
-  "license": "MIT",
-  "keywords": [
-    "wintersmith",
-    "wintersmith-plugin"
-  ],
-  "main": "lib/",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "coffee-script": ">1.5",
-    "vows": "0.7.x",
-    "wintersmith": "2.x"
-  },
-  "peerDependencies": {
-    "wintersmith": "2.x"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/vows test/* --spec",
-    "prepublish": "./bin/compile"
-  }
+	"name": "wintersmith-node-sass",
+	"version": "0.1.0",
+	"description": "A wintersmith plugin that compiles scss to css.",
+	"author": "Fiona Schmidtke",
+	"license": "MIT",
+	"keywords": [
+		"wintersmith",
+		"wintersmith-plugin",
+		"wintersmith-node-sass",
+		"sass",
+		"scss",
+		"node-sass"
+	],
+	"main": "lib/",
+	"dependencies": {
+		"node-sass": "~0.6.4",
+		"clean-css": "~1.0.12"
+	},
+	"devDependencies": {
+		"coffee-script": "~1.6.3",
+		"wintersmith": "~2.0.5"
+	},
+	"peerDependencies": {
+		"wintersmith": "~2.0.5"
+	},
+	"scripts": {
+		"prepublish": "./bin/compile"
+	}
 }
