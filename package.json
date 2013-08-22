@@ -26,5 +26,9 @@
 	},
 	"scripts": {
 		"prepublish": "./bin/compile"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/semfact/wintersmith-node-sass"
 	}
 }
