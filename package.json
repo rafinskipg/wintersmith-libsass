@@ -14,15 +14,15 @@
 	],
 	"main": "lib/",
 	"dependencies": {
-		"node-sass": "~0.6.4",
-		"clean-css": "~1.0.12"
+		"node-sass": "^0.9.3",
+		"clean-css": "^2.2.3"
 	},
 	"devDependencies": {
-		"coffee-script": "~1.6.3",
-		"wintersmith": "~2.0.5"
+		"coffee-script": "^1.7.1",
+		"wintersmith": "^2.0.10"
 	},
 	"peerDependencies": {
-		"wintersmith": "~2.0.5"
+		"wintersmith": "^2.0.10"
 	},
 	"scripts": {
 		"prepublish": "./bin/compile"
