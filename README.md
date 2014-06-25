@@ -1,5 +1,7 @@
 # wintersmith-node-sass
 
+[![Dependency Status](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038)
+
 [Wintersmith](https://github.com/jnordberg/wintersmith) plugin that compiles
 [sass](http://sass-lang.com) files using
 [node-sass](https://github.com/andrew/node-sass) and optionally minifies them
