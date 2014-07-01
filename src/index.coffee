@@ -22,7 +22,7 @@ module.exports = (env, callback) ->
 				includePaths: includePaths
 				success: (css) ->
 					if config.minify isnt false
-						css = ccss.process css, env.config['clean-css']
+						css = new ccss(env.config['clean-css']).minify(css)
 					callback null, new Buffer css
 				error: (err) ->
 					callback new Error err
