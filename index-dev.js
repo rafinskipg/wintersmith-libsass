@@ -1,2 +1,3 @@
 require('coffee-script');
-module.exports = require('./src');
+var path = require('path');
+module.exports = require(path.join(__dirname,'src'));
