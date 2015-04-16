@@ -1,6 +1,11 @@
 
 @import 'template.scss';
 
+$variable : black;
+
 foo {
 	content: 'bar';
+  color : $variable;
 }
+
+@import 'notRender';

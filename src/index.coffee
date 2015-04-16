@@ -27,13 +27,12 @@ module.exports = (env, callback) ->
 					else
 						callback null, new Buffer css.css
 				error: (err) ->
-					console.log err
 					callback new Error err
 		
 		NodeSassPlugin.fromFile = (filepath, callback) ->
 				plugin = new NodeSassPlugin filepath
 				callback null, plugin
 		
-		env.registerContentPlugin 'styles', '**/*.scss', NodeSassPlugin
+		env.registerContentPlugin 'styles', '**/[^_]*.scss', NodeSassPlugin
 	
 	callback()
