@@ -1,6 +1,6 @@
 {
 	"name": "wintersmith-node-sass",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "A wintersmith plugin that compiles scss to css.",
 	"author": "Fiona Schmidtke",
 	"license": "MIT",
@@ -14,8 +14,8 @@
 	],
 	"main": "lib/",
 	"dependencies": {
-		"node-sass": "^0.9.3",
-		"clean-css": "^2.2.3"
+		"node-sass": "^2.1.1",
+		"clean-css": "^3.1.9"
 	},
 	"devDependencies": {
 		"coffee-script": "^1.7.1",
@@ -29,6 +29,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/semfact/wintersmith-node-sass"
+		"url": "https://github.com/rafinskipg/wintersmith-node-sass"
 	}
 }
