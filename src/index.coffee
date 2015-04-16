@@ -5,7 +5,7 @@ ccss = require 'clean-css'
 
 module.exports = (env, callback) ->
 
-	class LibSassPlugin extends env.ContentPlugin
+	class NodeSassPlugin extends env.ContentPlugin
 		
 		constructor: (@filepath) ->
 		
@@ -21,14 +21,19 @@ module.exports = (env, callback) ->
 				file: @filepath.full
 				includePaths: includePaths
 				success: (css) ->
-					callback null, new Buffer css
+					console.log css
+					if config.minify isnt false
+						css = new ccss(env.config['clean-css']).minify(css.css)
+					callback null, new Buffer css.css
 				error: (err) ->
+					console.log err
 					callback new Error err
+				outputStyle: 'compressed'
 		
-		LibSassPlugin.fromFile = (filepath, callback) ->
-				plugin = new LibSassPlugin filepath
+		NodeSassPlugin.fromFile = (filepath, callback) ->
+				plugin = new NodeSassPlugin filepath
 				callback null, plugin
 		
-		env.registerContentPlugin 'styles', '**/*.scss', LibSassPlugin
+		env.registerContentPlugin 'styles', '**/*.scss', NodeSassPlugin
 	
 	callback()
