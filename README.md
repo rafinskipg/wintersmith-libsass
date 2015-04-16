@@ -1,6 +1,7 @@
-# wintersmith-node-sass
+# wintersmith-libsass
 
 Updated to use latest versions of `node-sass` and `clean-css`.
+
 [![Build Status](https://travis-ci.org/rafinskipg/wintersmith-node-sass.svg?branch=master)](https://travis-ci.org/rafinskipg/wintersmith-node-sass)
 
 [![Dependency Status](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038)
@@ -11,20 +12,24 @@ Updated to use latest versions of `node-sass` and `clean-css`.
 [node-sass](https://github.com/andrew/node-sass) and optionally minifies them
 using [clean-css](https://github.com/GoalSmashers/clean-css).
 
+
+This plugin is a fork of [wintersmith-node-sass](https://github.com/semfact/wintersmith-node-sass) but mantained up to date
+
+
 ## Installing
 
 Install globally or locally using npm
 
 ```
-npm install [-g] wintersmith-node-sass
+npm install [-g] wintersmith-libsass
 ```
 
-and add `wintersmith-sass` to your config.json
+and add `wintersmith-libsass` to your config.json
 
 ```json
 {
 	"plugins": [
-		"wintersmith-node-sass"
+		"wintersmith-libsass"
 	]
 }
 ```
