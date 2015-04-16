@@ -1,5 +1,7 @@
 # wintersmith-node-sass
 
+Updated to use latest versions of `node-sass` and `clean-css`.
+
 [![Dependency Status](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038)
 [![npm package](http://img.shields.io/npm/v/wintersmith-node-sass.svg?style=flat)](https://www.npmjs.org/package/wintersmith-node-sass)
 
@@ -66,7 +68,9 @@ If you want to add include directories for `node-sass` add them in the
 ```
 {
 	"node-sass": {
-		"includePaths": [
+		"in"scripts": {
+    "test": "grunt test"
+  },cludePaths": [
 			"./styles"
 		]
 	}

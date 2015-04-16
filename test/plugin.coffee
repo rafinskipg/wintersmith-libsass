@@ -14,12 +14,15 @@ suite.addBatch
       'loaded ok': (result) ->
         assert.instanceOf result.contents, wintersmith.ContentTree
       'has plugin instances': (result) ->
-        assert.instanceOf result.contents['hello.txt'], wintersmith.ContentPlugin
-        assert.isArray result.contents._.text
-        assert.lengthOf result.contents._.text, 2
-      'contains the right text': (result) ->
-        for item in result.contents._.text
-          assert.isString item.text
-          assert.match item.text, /^Wintersmith is awesome!\n/
+        assert.instanceOf result.contents['index.json'], wintersmith.ContentPlugin
+        assert.instanceOf result.contents['main.scss'], wintersmith.ContentPlugin
+        assert.isArray result.contents._.styles
+        assert.isArray result.contents._.pages
+      'it has the index jade': (result) ->
+        for item in result.contents._.pages
+          assert.equal item.metadata.template, 'index.jade'
+      'has the main.scss': (result) ->
+        console.log result.contents._.styles[0]
+        assert.equal result.contents._.styles[0].filepath.relative, 'main.scss'
 
 suite.export module

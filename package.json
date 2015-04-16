@@ -1,8 +1,8 @@
 {
-	"name": "wintersmith-node-sass",
+	"name": "wintersmith-libsass",
 	"version": "0.3.0",
 	"description": "A wintersmith plugin that compiles scss to css.",
-	"author": "Fiona Schmidtke",
+	"author": "Rafael Pedrola",
 	"license": "MIT",
 	"keywords": [
 		"wintersmith",
@@ -15,14 +15,15 @@
 	"main": "lib/",
 	"dependencies": {
 		"node-sass": "^2.1.1",
-		"clean-css": "^3.1.9"
+		"clean-css": "^2.2.3"
 	},
 	"devDependencies": {
 		"coffee-script": "^1.7.1",
-		"wintersmith": "^2.0.10"
+		"wintersmith": "^2.1.0",
+		"vows": "^0.8.1"
 	},
 	"peerDependencies": {
-		"wintersmith": "^2.0.10"
+		"wintersmith": "^2.1.0"
 	},
 	"scripts": {
 		"prepublish": "./bin/compile"
@@ -30,5 +31,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rafinskipg/wintersmith-node-sass"
-	}
+	},
+	"scripts": {
+    "test": "./node_modules/coffee-script/bin/coffee test/plugin.coffee"
+  }
 }
