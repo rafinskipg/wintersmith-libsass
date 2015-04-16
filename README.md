@@ -2,8 +2,7 @@
 
 Updated to use latest versions of `node-sass` and `clean-css`.
 
-[![Build Status](https://travis-ci.org/rafinskipg/wintersmith-node-sass.svg?branch=master)](https://travis-ci.org/rafinskipg/wintersmith-node-sass)
-
+[![Build Status](https://travis-ci.org/rafinskipg/wintersmith-libsass.svg?branch=master)](https://travis-ci.org/rafinskipg/wintersmith-libsass)
 [![Dependency Status](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53ab11a5d043f9e6a0000038)
 [![npm package](http://img.shields.io/npm/v/wintersmith-node-sass.svg?style=flat)](https://www.npmjs.org/package/wintersmith-node-sass)
 
