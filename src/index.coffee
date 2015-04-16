@@ -23,7 +23,7 @@ module.exports = (env, callback) ->
 				success: (css) ->
 					if config.minify isnt false
 						css = new ccss(env.config['clean-css']).minify(css.css)
-						callback null, new Buffer css
+						callback null, new Buffer css.styles
 					else
 						callback null, new Buffer css.css
 				error: (err) ->
