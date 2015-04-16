@@ -22,7 +22,6 @@ suite.addBatch
         for item in result.contents._.pages
           assert.equal item.metadata.template, 'index.jade'
       'has the main.scss': (result) ->
-        console.log result.contents._.styles[0]
         assert.equal result.contents._.styles[0].filepath.relative, 'main.scss'
 
 suite.export module
