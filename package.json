@@ -1,6 +1,6 @@
 {
 	"name": "wintersmith-libsass",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "A wintersmith plugin that compiles scss to css.",
 	"author": "Rafael Pedrola",
 	"license": "MIT",
@@ -25,14 +25,12 @@
 	"peerDependencies": {
 		"wintersmith": "^2.1.0"
 	},
-	"scripts": {
-		"prepublish": "./bin/compile"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rafinskipg/wintersmith-libsass"
 	},
 	"scripts": {
-    "test": "./node_modules/coffee-script/bin/coffee test/plugin.coffee"
+    "test": "./node_modules/coffee-script/bin/coffee test/plugin.coffee",
+    "prepublish": "./bin/compile"
   }
 }
