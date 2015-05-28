@@ -47,9 +47,9 @@ Minifying of css files can be turned off using the config.json
 
 ```
 {
-	"node-sass": [
+	"node-sass": {
 		"minify": false
-	]
+	}
 }
 ```
 
