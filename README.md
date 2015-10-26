@@ -73,9 +73,7 @@ If you want to add include directories for `node-sass` add them in the
 ```
 {
 	"node-sass": {
-		"in"scripts": {
-    "test": "grunt test"
-  },cludePaths": [
+		"includePaths": [
 			"./styles"
 		]
 	}
