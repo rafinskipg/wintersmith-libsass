@@ -19,15 +19,15 @@ module.exports = (env, callback) ->
 			includePaths.push env.config.contents
 			sass.render
 				file: @filepath.full
-				includePaths: includePaths
-				success: (css) ->
+				includePaths: includePaths,
+				(err, css) ->
+					if err
+						callback new Error err
 					if config.minify isnt false
 						css = new ccss(env.config['clean-css']).minify(css.css)
 						callback null, new Buffer css.styles
 					else
 						callback null, new Buffer css.css
-				error: (err) ->
-					callback new Error err
 		
 		NodeSassPlugin.fromFile = (filepath, callback) ->
 				plugin = new NodeSassPlugin filepath
