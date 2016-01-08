@@ -1,35 +1,35 @@
 {
-	"name": "wintersmith-libsass",
-	"version": "0.3.2",
-	"description": "A wintersmith plugin that compiles scss to css.",
-	"author": "Rafael Pedrola",
-	"license": "MIT",
-	"keywords": [
-		"wintersmith",
-		"wintersmith-plugin",
-		"wintersmith-libsass",
-		"sass",
-		"scss",
-		"node-sass"
-	],
-	"main": "lib/",
-	"dependencies": {
-		"node-sass": "^3.4.2",
-		"clean-css": "^3.4.9"
-	},
-	"devDependencies": {
-		"coffee-script": "^1.7.1",
-		"wintersmith": "^2.1.0",
-		"vows": "^0.8.1"
-	},
-	"peerDependencies": {
-		"wintersmith": "^2.1.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rafinskipg/wintersmith-libsass"
-	},
-	"scripts": {
+  "name": "wintersmith-libsass",
+  "version": "0.4.0",
+  "description": "A wintersmith plugin that compiles scss to css.",
+  "author": "Rafael Pedrola",
+  "license": "MIT",
+  "keywords": [
+    "wintersmith",
+    "wintersmith-plugin",
+    "wintersmith-libsass",
+    "sass",
+    "scss",
+    "node-sass"
+  ],
+  "main": "lib/",
+  "dependencies": {
+    "node-sass": "^3.4.2",
+    "clean-css": "^3.4.9"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "wintersmith": "^2.1.0",
+    "vows": "^0.8.1"
+  },
+  "peerDependencies": {
+    "wintersmith": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafinskipg/wintersmith-libsass"
+  },
+  "scripts": {
     "test": "./node_modules/coffee-script/bin/coffee test/plugin.coffee",
     "prepublish": "./bin/compile"
   }
